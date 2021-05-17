@@ -52,7 +52,7 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>AnyDL Bot Help!
+               text="""<b>YouTube Bot Help!
 
 Just send a Youtube url to download it in video or audio format!
 
@@ -76,13 +76,19 @@ async def about(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>About YouTube Bot!</b>
+               text="""<b>About TeleRoid YouTube Bot!</b>
 
 <b>👨‍💻 Developer:</b> <a href="https://t.me/PredatorHackerzZ_bot">Predator 🇮🇳</a>
 
-<b>⭕ Support:</b> <a href="https://t.me/TeleRoid14">TeleRoid BOTs Support</a>
+<b>💁‍♂️ Support:</b> <a href="https://t.me/TeleRoid14">TeleRoid Support</a>
+
+<b>😇 Channel :</b> <a href="https://t.me/TeleRoidGroup">TeleRoid Updates </a>
 
 <b>📚 Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
+
+<b>🤖 BotList :</b> <a href="https://t.me/TGRobot_List"> Telegram Bots </a>
+
+<b>📌 Source : </b> <a href="https://GitHub.com/P-Phreak/TG-YouTube-Uploader"> Click Here </a>
 
 <b>~ @TeleRoidGroup</b>""",
      reply_markup=InlineKeyboardMarkup(
