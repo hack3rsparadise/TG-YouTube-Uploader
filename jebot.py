@@ -60,7 +60,7 @@ Just send a Youtube url to download it in video or audio format!
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "⭕ Channel ⭕", URL="https://t.me/TeleRoidGroup),
+                                            "⭕ Channel ⭕", url="https://t.me/TeleRoidGroup),
                                         InlineKeyboardButton(
                                             "🛑 Support 🛑", url="https://t.me/TeleRoid14"),
                                   ],[
