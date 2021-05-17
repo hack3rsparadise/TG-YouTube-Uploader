@@ -95,8 +95,7 @@ async def about(client, message):
                                 [[
                                         InlineKeyboardButton(
                                             "⭕ Join Our Channel ⭕", url="https://t.me/TeleRoidGroup"),
-                                        InlineKeyboardButton(
-                                            "Back", callback_data="help")
+                                      
                                     ]]
                             ),        
             disable_web_page_preview=True,        
