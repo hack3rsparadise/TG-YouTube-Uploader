@@ -1,6 +1,8 @@
 # TG-YouTube-Uploader
-Best YouTube Video or Audio Downloader in TeleGram By @TeamTeleRoid
-# AnyDL Bot ❤
+
+Best YouTube Video or Audio Downloader in TeleGram By @TeamTeleRoid........ 
+
+# TeleRoid YouTube Bot ❤
 
 > This bot can download video or audio from youtube quickly (custom thumbnail support) Can be found in telegram as [@TeleRoidYoutubeBot](https://t.me/TeleRoid_YouTube_Bot)
 
