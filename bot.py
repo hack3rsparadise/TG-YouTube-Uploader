@@ -23,7 +23,7 @@ YTDL_REGEX = (r"^((?:https?:)?\/\/)"
 s2tw = OpenCC('s2tw.json').convert
 
 
-@Jebot.on_message(filters.command("start"))
+@bot.on_message(filters.command("start"))
 async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
@@ -47,7 +47,7 @@ Hit help button to find out more about how to use me</b>""",
             disable_web_page_preview=True,        
             parse_mode="html")
 
-@Jebot.on_message(filters.command("help"))
+@bot.on_message(filters.command("help"))
 async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
@@ -71,7 +71,7 @@ Just send a Youtube url to download it in video or audio format!
             disable_web_page_preview=True,        
             parse_mode="html")
 
-@Jebot.on_message(filters.command("about"))
+@bot.on_message(filters.command("about"))
 async def about(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
@@ -104,7 +104,7 @@ async def about(client, message):
 
 # https://docs.pyrogram.org/start/examples/bot_keyboards
 # Reply with inline keyboard
-@Jebot.on_message(filters.private
+@bot.on_message(filters.private
                    & filters.text
                    & ~filters.edited
                    & filters.regex(YTDL_REGEX))
@@ -129,7 +129,7 @@ async def ytdl_with_button(_, message: Message):
     )
 
 
-@Jebot.on_callback_query(filters.regex("^ytdl_audio$"))
+@bot.on_callback_query(filters.regex("^ytdl_audio$"))
 async def callback_query_ytdl_audio(_, callback_query):
     try:
         url = callback_query.message.reply_to_message.text
@@ -207,7 +207,7 @@ else:
        os.remove(audio_file)
        os.remove(thumbnail_file)
 
-@Jebot.on_callback_query(filters.regex("^ytdl_video$"))
+@bot.on_callback_query(filters.regex("^ytdl_video$"))
 async def callback_query_ytdl_video(_, callback_query):
     try:
         # url = callback_query.message.text
@@ -308,7 +308,7 @@ def get_resolution(info_dict):
     return (width, height)
 
 
-@Jebot.on_callback_query()
+@bot.on_callback_query()
 async def button(bot, update):
       cb_data = update.data
       if "help" in cb_data:
@@ -324,7 +324,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @TGRobot_List
+Join **@TGRobot_List**
 """
 )
 
